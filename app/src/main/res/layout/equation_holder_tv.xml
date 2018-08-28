@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/equation_holder_tv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/calculator_equation_holder_tv_style"
+    android:layout_weight="1"
+    tools:text="123,456"
+    xmlns:tools="http://schemas.android.com/tools">
+
+</TextView>

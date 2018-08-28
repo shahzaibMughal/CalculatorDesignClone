@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/calculator_scientific_operators_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/drawer_width"
+    android:layout_height="match_parent"
+    android:background="@color/calculator_scientific_operators_background">
+
+
+    <Button
+        android:id="@+id/operator_inv"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text="INV"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+    <Button
+        android:id="@+id/operator_RAD"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text="RAD"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toEndOf="@id/operator_inv"
+        app:layout_constraintTop_toTopOf="@id/operator_inv"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+    <Button
+        android:id="@+id/operator_percent"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text="%"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toEndOf="@id/operator_RAD"
+        app:layout_constraintTop_toTopOf="@id/operator_RAD"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+    <Button
+        android:id="@+id/operator_sin"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text="sin"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@id/operator_inv"
+        app:layout_constraintTop_toBottomOf="@id/operator_inv"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+    <Button
+        android:id="@+id/operator_cos"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text="cos"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toEndOf="@id/operator_sin"
+        app:layout_constraintTop_toBottomOf="@id/operator_RAD"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+    <Button
+        android:id="@+id/operator_tan"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text="tan"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toEndOf="@id/operator_cos"
+        app:layout_constraintTop_toBottomOf="@id/operator_percent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+    <Button
+        android:id="@+id/operator_ln"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text="ln"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@id/operator_sin"
+        app:layout_constraintTop_toBottomOf="@id/operator_sin"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+    <Button
+        android:id="@+id/operator_log"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text="log"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toEndOf="@id/operator_ln"
+        app:layout_constraintTop_toBottomOf="@id/operator_cos"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+    <Button
+        android:id="@+id/operator_exclamation_mark"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text="!"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toEndOf="@id/operator_log"
+        app:layout_constraintTop_toBottomOf="@id/operator_tan"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+    <Button
+        android:id="@+id/operator_pi"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text="π"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@id/operator_ln"
+        app:layout_constraintTop_toBottomOf="@id/operator_ln"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+    <Button
+        android:id="@+id/operator_e"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text="e"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toEndOf="@id/operator_pi"
+        app:layout_constraintTop_toBottomOf="@id/operator_log"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+    <Button
+        android:id="@+id/operator_hat"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text="^"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toEndOf="@id/operator_e"
+        app:layout_constraintTop_toBottomOf="@id/operator_exclamation_mark"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+    <Button
+        android:id="@+id/operator_bracket_open"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text="("
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@id/operator_pi"
+        app:layout_constraintTop_toBottomOf="@id/operator_pi"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+    <Button
+        android:id="@+id/operator_bracket_close"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text=")"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toEndOf="@id/operator_bracket_open"
+        app:layout_constraintTop_toBottomOf="@id/operator_e"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+    <Button
+        android:id="@+id/operator_square_root"
+        style="@style/calculator_scientific_operator_button_style"
+        android:text="√"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toEndOf="@id/operator_bracket_close"
+        app:layout_constraintTop_toBottomOf="@id/operator_hat"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33333333" />
+
+
+</android.support.constraint.ConstraintLayout>

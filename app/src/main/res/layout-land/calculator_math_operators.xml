@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/calculator_math_operators_background">
+
+    <Button
+        android:id="@+id/del_button"
+        android:textSize="@dimen/calculator_scientific_operator_button_text_size"
+        style="@style/calculator_math_operator_button_style"
+        android:layout_width="0dp"
+        android:text="DEL"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toEndOf="@id/operator_divide"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/operator_divide"
+        style="@style/calculator_math_operator_button_style"
+        android:layout_width="0dp"
+        android:text="÷"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/operator_multiply"
+        style="@style/calculator_math_operator_button_style"
+        android:layout_width="0dp"
+        android:text="×"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="@id/operator_divide"
+        app:layout_constraintTop_toBottomOf="@id/operator_divide"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/operator_subtract"
+        style="@style/calculator_math_operator_button_style"
+        android:layout_width="0dp"
+        android:text="-"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="@id/operator_multiply"
+        app:layout_constraintTop_toBottomOf="@id/operator_multiply"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/operator_plus"
+        style="@style/calculator_math_operator_button_style"
+        android:layout_width="0dp"
+        android:text="+"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="@id/operator_subtract"
+        app:layout_constraintTop_toBottomOf="@id/operator_subtract"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+
+    <Button
+        android:id="@+id/equal_operator"
+        style="@style/calculator_math_operator_button_style"
+        android:layout_width="0dp"
+        android:text="="
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toEndOf="@id/operator_plus"
+        app:layout_constraintBottom_toBottomOf="@id/operator_plus"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+
+</android.support.constraint.ConstraintLayout>

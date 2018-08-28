@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/calculator_math_operators_background">
+
+    <Button
+        android:id="@+id/del_button"
+        style="@style/calculator_math_operator_button_style"
+        android:text="DEL"
+        android:textSize="@dimen/calculator_scientific_operator_button_text_size"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/operator_divide"
+        style="@style/calculator_math_operator_button_style"
+        android:text="÷"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@id/del_button"
+        app:layout_constraintTop_toBottomOf="@id/del_button"/>
+
+    <Button
+        android:id="@+id/operator_multiply"
+        style="@style/calculator_math_operator_button_style"
+        android:text="×"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@id/operator_divide"
+        app:layout_constraintTop_toBottomOf="@id/operator_divide"/>
+
+    <Button
+        android:id="@+id/operator_subtract"
+        style="@style/calculator_math_operator_button_style"
+        android:text="-"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@id/operator_multiply"
+        app:layout_constraintTop_toBottomOf="@id/operator_multiply"/>
+
+    <Button
+        android:id="@+id/operator_plus"
+        style="@style/calculator_math_operator_button_style"
+        android:text="+"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@id/operator_subtract"
+        app:layout_constraintTop_toBottomOf="@id/operator_subtract"/>
+
+
+</android.support.constraint.ConstraintLayout>

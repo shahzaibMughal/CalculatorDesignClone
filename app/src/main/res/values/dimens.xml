@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="calculator_main_content_height">376dp</dimen>
+    <dimen name="calculator_number_button_text_size">24sp</dimen>
+    <dimen name="calculator_math_operator_button_text_size">28sp</dimen>
+    <dimen name="calculator_scientific_operator_button_text_size">20sp</dimen>
+    <dimen name="calculator_math_operator_button_padding">8dp</dimen>
+    <dimen name="calculator_equation_holder_tv_text_size">45sp</dimen>
+    <dimen name="content_key_line">16dp</dimen>
+    <dimen name="drawer_width">320dp</dimen>
+</resources>
